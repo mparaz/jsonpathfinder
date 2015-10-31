@@ -1,0 +1,10 @@
+{
+  "document": {
+    "sample": [1,2,3],
+    "test": ["me", {"now": "always"}]
+  },
+  "array": ["a1", "a2", "a3"]
+}
+
+
+

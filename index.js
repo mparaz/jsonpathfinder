@@ -1,19 +1,19 @@
 var traverse = require('traverse');
 
-function makepath(obj) {
+function findpath(obj) {
     var paths = [];
     traverse(obj).forEach(function (node) {
         if (this.path.length > 0) {
-            var newPaths = '$' + this.path.reduce(function(a, n) {
+            var newPath = '$' + this.path.reduce(function(a, n) {
                 return a + '.' + n;
             }, '');
 
-            paths.push(newPaths);
+            paths.push([newPath, this.isLeaf, node]);
         }
     });
 
     return paths;
 }
 
-exports.makepath = makepath;
+exports.findpath = findpath;
 

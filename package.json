@@ -1,10 +1,10 @@
 {
-  "name": "jsonpathmaker",
+  "name": "jsonpathfinder",
   "version": "0.0.1",
   "description": "Make JSON Paths from objects or JSON",
   "main": "index.js",
   "scripts": {
-    "test": "test.js"
+    "test": "mocha"
   },
   "keywords": [
     "JSON",
@@ -13,7 +13,10 @@
   "author": "Miguel Paraz",
   "license": "ISC",
   "dependencies": {
-    "jsonpath": "^0.2.0",
     "traverse": "^0.6.6"
+  },
+  "devDependencies": {
+    "should": "^7.1.1",
+    "jsonpath": "^0.2.0"
   }
 }
