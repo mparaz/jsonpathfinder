@@ -1,0 +1,19 @@
+{
+  "name": "jsonpathmaker",
+  "version": "0.0.1",
+  "description": "Make JSON Paths from objects or JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "keywords": [
+    "JSON",
+    "JSONPath"
+  ],
+  "author": "Miguel Paraz",
+  "license": "ISC",
+  "dependencies": {
+    "jsonpath": "^0.2.0",
+    "traverse": "^0.6.6"
+  }
+}
