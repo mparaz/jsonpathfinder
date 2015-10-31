@@ -1,6 +1,6 @@
 var traverse = require('traverse');
 
-function findpath(obj) {
+function findpaths(obj) {
     var paths = [];
     traverse(obj).forEach(function (node) {
         if (this.path.length > 0) {
@@ -15,5 +15,5 @@ function findpath(obj) {
     return paths;
 }
 
-exports.findpath = findpath;
+exports.findpaths = findpaths;
 
